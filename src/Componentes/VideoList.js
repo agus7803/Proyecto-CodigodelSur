@@ -7,6 +7,6 @@ const VideoList = ({videos, handleVideoSelect}) => {
     const renderVideo = videos.map((video) => {
         return <Video key={video.id.videoId} video={video} handleVideoSelect={handleVideoSelect}/>
     });
-    return <Grid container spacing={10}>{renderVideo}</Grid>
+    return <Grid container spacing={6}>{renderVideo}</Grid>
 };
 export default VideoList;
